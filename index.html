@@ -1,11 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trabalho Pyton</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="container">
+        <h1>Exibição de Resultados e Cálculos</h1>
 
+        <!-- Primeira parte do código -->
+        <div class="output">
+            <p><strong>Saídas do Código:</strong></p>
+            <pre>
+II Hallo madschen, danke
+Hallo mann, unsonst
+            </pre>
+            <pre>
+Os pontos totais do Rodrigo são 24
+Os pontos totais Ana são 46
+Os pontos totais do Carlos são 68
+Os pontos totais de Ana, Rodrigo e Carlos são 138
+Os pontos totais de Ana e Rodrigo são 114
+            </pre>
+        </div>
+
+        <!-- Parte para cálculo de figurinhas -->
+        <div class="input-section">
+            <p><strong>Informe os dados abaixo para calcular as figurinhas do João:</strong></p>
+
+            <label for="total_figurinhas">Digite o total de figurinhas:</label>
+            <input type="number" id="total_figurinhas" placeholder="Total de figurinhas" />
+
+            <label for="numero_amigos">Digite o número de amigos:</label>
+            <input type="number" id="numero_amigos" placeholder="Número de amigos" />
+
+            <button id="calcular">Calcular figurinhas</button>
+        </div>
+
+        <!-- Resultado do cálculo -->
+        <div class="result">
+            <p><strong>Resultado:</strong></p>
+            <pre id="resultado">João recebeu X figurinhas</pre>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
